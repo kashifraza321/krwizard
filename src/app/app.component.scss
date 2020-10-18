@@ -1,0 +1,232 @@
+@font-face {
+    font-family: 'NewParisSkyline';
+    src: url('../assets/fonts/Font.woff2') format('woff2'),
+        url('../assets/fonts/Font.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NewParisSkyline';
+    src: url('../assets/fonts/Font.woff2') format('woff2'),
+        url('../assets/fonts/Font.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+.bottom, .top {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    transition: all 2s ease 0s;
+}
+.top {
+    top: 17.5px;
+    z-index: 9;
+    top: 48%;
+}
+.bottom {
+    bottom: 13.5px;
+    z-index: 9;
+    bottom: 46%;
+}
+::ng-deep {
+body ,body *{
+    font-family: 'NewParisSkyline';
+}
+    .menuk .menu  a {
+        color: #000!important; 
+        font-size: 15px!important;
+    }
+    .logo a {
+        z-index: 10;
+        position: relative;
+        display: block;
+    }
+
+body {
+    overflow: hidden;
+    width: 100vw;
+}
+.sliderloaded .top{
+    top: 17.5px;
+}
+.sliderloaded .bottom{
+    bottom: 13.5px;
+}
+.logo.top:before {
+    content: " ";
+    background: #fff;
+    width: 100%;
+    position: absolute;
+    z-index: 9;
+    left: -48vw;
+    bottom: 0;
+    width: 107vw;
+    display: block;
+    height: 100vh;
+    left: calc(-50vw + 50px);
+}
+.logo.bottom:after {
+    content: " ";
+    background: #fff;
+    width: 100%;
+    position: absolute;
+    z-index: 9;
+    left: -48vw;
+    top: 0%;
+    width: 107vw;
+    left: calc(-50vw + 50px);
+    display: block;
+    height: 100vh;
+}
+.mobile-togle , .d-inline-block, .float-right{
+    display: none!important;
+}
+@media only screen and (max-width: 768px) {
+    html body .menuk > .menu{
+display: none;
+    }
+    .d-inline-block  .menu a:after {
+        content: "";
+        background: #fff;
+        width: 30px;
+        height: 4px;
+        position: absolute;
+        left: 0;
+        top: 121%;
+    }
+    .d-inline-block  .menu a{
+        position: relative; 
+    }
+.mobile-togle, .d-inline-block, .float-right {
+    display: block !important;
+    position: absolute;
+    z-index: 9999;
+    right: 0px;
+    /* font-size: 0px; */
+}
+.overflow-hidne.menuk .menu {
+    display: none;
+}
+.menu {
+    position: relative!important;
+    top: auto!important;
+    bottom: auto!important;
+    left: auto!important;
+    right: auto !important;
+    z-index: 9999999;
+    /* margin-top: 16px; */
+    background: #000;
+    z-index: 99!important;
+    padding: 10px 20px; 
+}
+.col-lg-12.col-md-12.col-sm-12.col-xs-12 {
+    margin: 0px;
+    padding: 0px;
+}
+.flexslider .slides  img{
+    height: auto; 
+    height: 86vh!important;
+}
+.sliderloaded .bottom {
+    bottom: 36.5px;
+}
+.sliderloaded .top {
+    top: 13.5px;
+}
+.mobile-togle{
+    display: block;
+    text-align: right;
+    padding: 0 10px;
+}
+ 
+body .bottom[_ngcontent-cvc-c105] { 
+    bottom: 43.5%;
+}
+}
+}
+.logo, .menu {
+    position: absolute;
+}
+.overflow-hidne{
+    overflow: hidden;
+    // height: 100vh;
+}
+.menu {
+    text-transform: uppercase;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    color: #000000;
+}
+.menu a{
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+}
+.d-inline-block {
+    top: 36px;
+    background: #000;
+    color: #fff;
+    overflow-y: scroll;
+    height: 93vh;
+}
+.d-inline-block span{
+    font-size: 11px;
+    margin-left: 20px;
+}
+.address {
+    padding-left: 20px;
+}
+.address  span{
+    margin-left: 0px;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+.address h3 , .menu a {
+    font-size: 29px;
+}
+button.float-right {
+    font-size: 0px;
+    outline: none;
+    border: 0px;
+    background: rgb(255 255 255);
+}
+
+button.float-right::after{
+    content: "+";
+    font-size: 20px;
+}
+button.float-right.negative::after{
+    content: "-";
+    font-size: 20px;
+    
+}
+.menu a:hover{
+color: #39ff14
+}
+.propos {
+    top: 2vh;
+    left: 5.5vw;
+    z-index: 10;
+    
+}
+.contact {
+    bottom: 1vh;
+    left: 5.5vw;
+    z-index: 10;
+}
+.projects {
+    top: 2vh;
+    right: 5.5vw;
+    z-index: 10;
+}
+.opportunite {
+    bottom: 1vh;
+    right: 5.5vw;
+    z-index: 10;
+}

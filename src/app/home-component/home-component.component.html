@@ -1,0 +1,97 @@
+<!-- {{slides['home_slider'] | json}} -->
+<!-- <div class="warpper warpperHome">
+    <div>
+      <div>
+        <div class="logo top"><a href="http://www.idos.ch/#/"><img src="./IDOS_files/IDOS_top_black.548c35a6.svg"
+              width="100"></a></div>
+        <div class="logo bottom"><a href="http://www.idos.ch/#/"><img
+              src="./IDOS_files/IDOS_bottom_black.3c65a55b.svg" width="100"></a></div>
+      </div>
+    </div>
+    <div class="menu one propos"><a href="http://www.idos.ch/#/apropos">À PROPOS</a></div>
+    <div class="menu two contact"><a href="http://www.idos.ch/#/contact">Contact</a></div>
+    <div class="menu four projects"><a href="http://www.idos.ch/#/projets">Projets</a></div>
+    <div class="menu four opportunite"><a href="http://www.idos.ch/#/oportunite">Opportunité</a></div>
+    <div class="mobile_menu four"><i class="material-icons">add</i></div>
+    <div class="mobile_menu_links_light" id="mobileMenuLinks">
+      <div class="menu_links"><a class="d-block" href="http://www.idos.ch/#/apropos"
+          style="color: black; text-decoration: none;">À PROPOS</a><a class="d-block"
+          href="http://www.idos.ch/#/contact" style="color: black; text-decoration: none;">Contact</a><a
+          class="d-block" href="http://www.idos.ch/#/projets"
+          style="color: black; text-decoration: none;">Projets</a><a class="d-block"
+          href="http://www.idos.ch/#/oportunite" style="color: black; text-decoration: none;">Opportunité</a></div>
+      <div class="menu_address">
+        <ul class="list-unstyled fz18">
+          <li>IDOS architecture SA</li>
+          <li>Route des Falaises 14<br> 2000 Neuchatel <br>Suisse</li>
+          <li>info@idos.ch</li>
+          <li>+41 32 665 22 22</li>
+        </ul>
+      </div>
+    </div>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#demo" data-slide-to="3"></li>
+        <li data-target="#demo" data-slide-to="4"></li>
+      </ul>
+      <div class="carousel-inner" style="height: 100%;">
+        <div class="carousel-item text-center active" style="height: 100%;"><a
+            href="http://www.idos.ch/#/projectsDetails">
+            <div>
+              <div style=""><img alt="mobile" class="img-fluid-custome d-block d-lg-none mobile"
+                  src="./IDOS_files/1901-portrait.jpg" style="width: 100%;"><img
+                  src="./IDOS_files/1901-landscape.jpg" alt="desktop"
+                  class="img-fluid-custome img-fluid d-none d-lg-block desktop"></div>
+            </div>
+          </a></div>
+        <div class="carousel-item text-center" style="height: 100%;"><a href="http://www.idos.ch/#/projectsDetails">
+            <div>
+              <div style=""><img src="./IDOS_files/1913-portrait.jpg" alt="mobile"
+                  class="img-fluid-custome d-block d-lg-none mobile" style="width: 100%;"><img alt="desktop"
+                  class="img-fluid-custome img-fluid d-none d-lg-block desktop"
+                  src="./IDOS_files/1913-landscape.jpg"></div>
+            </div>
+          </a></div>
+        <div class="carousel-item text-center" style="height: 100%;"><a href="http://www.idos.ch/#/projectsDetails">
+            <div>
+              <div style=""><img alt="mobile" class="img-fluid-custome d-block d-lg-none mobile"
+                  src="./IDOS_files/1904-portrait.jpg" style="width: 100%;"><img
+                  src="./IDOS_files/1904-landscape.jpg" alt="desktop"
+                  class="img-fluid-custome img-fluid d-none d-lg-block desktop"></div>
+            </div>
+          </a></div>
+        <div class="carousel-item text-center" style="height: 100%;"><a href="http://www.idos.ch/#/projectsDetails">
+            <div>
+              <div style=""><img alt="mobile" class="img-fluid-custome d-block d-lg-none mobile"
+                  src="./IDOS_files/1909-portrait.jpg" style="width: 100%;"><img
+                  src="./IDOS_files/1909-landsacpe.jpg" alt="desktop"
+                  class="img-fluid-custome img-fluid d-none d-lg-block desktop"></div>
+            </div>
+          </a></div>
+      </div>
+    </div>
+  </div> -->
+  
+   <!-- <div *ngFor="let slide of slides"> 
+    <! -- {{slide | json}} -- >
+    {{slide.slides.url}}
+     
+</div> --> 
+ 
+<div class="container-full">
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+       <div class="flexslider carousel">
+         <ul class="slides">
+           <li *ngFor="let slide of slides">
+             <img src="{{slide.slides.url}}" />
+           </li> 
+         </ul>
+       </div>
+    </div>
+  </div>
+</div>
+<!--/ container end -->
