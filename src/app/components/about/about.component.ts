@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../../core/services/api.service';
+import { ApiService } from '../../core/services/api.service'; 
+declare var $: any;
 
 @Component({
   selector: 'app-about',
@@ -25,10 +26,21 @@ export class AboutComponent implements OnInit {
         console.log(today);
      //  this.today = data;
     //setTimeout(function(){ $('body').addClass('sliderloaded'); }, 100);
+    this.functionA();
   });
   }
   
-
-    
+  functionA(){
+    //(<any>$('.flexslider')).flexslider({
+      //(<any>$('.details')).click(function(e){
+      (<any>$( ".details" )).on( "click", function(e) {
+        console.log(e);
+        (e).preventDefault();
+        $(e.target).parent().addClass("kashif");
+        $(e.target).parent().next("code").animate({
+          height: 'toggle'
+        });
+      });
+}
 
 }

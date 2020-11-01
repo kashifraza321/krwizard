@@ -37,7 +37,7 @@ export class HomeComponentComponent implements OnInit {
     (<any>$('.flexslider')).flexslider({
       animation: "slide",
       animationLoop: false, 
-      itemMargin: 5,
+      itemMargin: 0,
       directionNav:false
   });
 }

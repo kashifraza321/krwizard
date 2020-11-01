@@ -11,21 +11,98 @@
     color: #000000;
     font-weight: 600;
 }
+
 ::ng-deep {
+   body .contact{
+        bottom: 0vh;
+        left: 73px; 
+    }
  .top{
-    top: 17.5px!important;
+    top: 21px !important;
 }
  .bottom{
     bottom: 13.5px!important;
 }
 }
 
-.warpperHome .content {
-    padding: 10px 7vw;
-    // background: #e4e4e4;
+.warpperHome .content { 
     min-height: 89.5vh;
 }
+.warpperHome .content {
+    padding: 10px 14vw; 
+}
+
+
+.warpperHome .content code{
+    // padding: 10px 0vw; 
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left: 50%;
+    padding: 20px 19vw;
+}
+
 ::ng-deep {
+    .warpperHome h2 {
+        position: relative; 
+        display: block;
+        margin-bottom: 0px;
+    }
+    .warpperHome h2:after {
+        content: "";
+        height: 4px;
+        width: 20px;
+        background: #000;
+        position: absolute;
+        left: 0px; 
+        top: 100%;
+
+    }
+    code {
+        background: #000;
+        display: block;
+        padding: 30px 0;
+        color: #fff;
+        position: relative;
+        width: calc(100vw - 150px);
+        position: relative;
+        margin-left: -50vw;
+        left: calc( 50% + 73px);
+        padding: 0px 14vw;
+        display: none;
+    }
+
+    // code:before {
+    //     content: "";
+    //     background: #000;
+    //     /* height: 100px; */
+    //     width: 100vw;
+    //     display: block;
+    //     right: 100%;
+    //     top: 0px;
+    //     bottom: 0px;
+    //     position: absolute;
+    // }
+    // code::after {
+    //     content: "";
+    //     background: #000;
+    //     /* height: 100px; */
+    //     width: 100vw;
+    //     display: block;
+    //     left: 100%;
+    //     top: 0px;
+    //     bottom: 0px;
+    //     position: absolute;
+    // }
+    code h3 {
+        font-size: 50px;
+        padding: 0px;
+        margin: 0px;
+    }
+    span.details {
+        font-size: 14px;
+        color: #22262a;
+    }
     html body .menuk >.logo, html body .menuk > .menu {
         position: fixed;
     }
@@ -69,6 +146,7 @@ h4 {
 }
 .para {
     font-size: 50px;
+    line-height: 1;
 }
 p {
     font-size: 50px;
@@ -102,13 +180,12 @@ body .opportunite  , body .contact{
 .overflow-hidne:after {
     content: "";
     background: #cccccc47;
-    width: calc(100% - 100px);
+    width: calc(100% - 136px);
     height: 100vh;
     position: fixed;
-    left: 50px;
+    left: 73px;
     top: 41px;
     z-index: -1;
-    right: 0px;
 }
 } 
 h3 {

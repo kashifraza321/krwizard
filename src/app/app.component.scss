@@ -16,7 +16,28 @@
     font-display: swap;
 }
 
-
+@font-face {
+    font-family: "ParisSkyline-M";
+    src:  url("../assets/fonts/NewParisSkyline-Medium-WebS.1597d900.woff") format("woff"),
+      /* Pretty Modern Browsers */
+       // url("assets/fonts/NewParisSkyline-Medium-WebS.ttf") format("truetype"),
+      /* Safari, Android, iOS */
+       // url("assets/fonts/NewParisSkyline-Medium-WebS.svg#svgFontName")
+       // format("svg");
+    /* Legacy iOS */
+  }
+  
+  @font-face {
+    font-family: "ParisSkyline-XL";
+  
+    src:  url("../assets/fonts/Inter-UI-Regular.woff2") format("woff"),
+      /* Pretty Modern Browsers */
+       // url("assets/fonts/NewParisSkyline-Medium-WebXL.ttf") format("truetype"),
+      /* Safari, Android, iOS */
+       // url("assets/fonts/NewParisSkyline-Medium-WebXL.svg#svgFontName")
+       // format("svg");
+    /* Legacy iOS */
+  }
 
 .bottom, .top {
     left: 50%;
@@ -27,16 +48,29 @@
 .top {
     top: 17.5px;
     z-index: 9;
-    top: 48%;
+    top: 49%;
 }
+@media only screen and (max-width: 768px) {
+    .top  { 
+        top: 48.3%;
+    }
+    }
 .bottom {
     bottom: 13.5px;
     z-index: 9;
     bottom: 46%;
 }
 ::ng-deep {
+
+    a:hover{
+       color: #39ff14;
+    }
+    html{
+        overflow-x: hidden;
+    }
 body ,body *{
     font-family: 'NewParisSkyline';
+    font-family: "ParisSkyline-M";
 }
     .menuk .menu  a {
         color: #000!important; 
@@ -46,14 +80,15 @@ body ,body *{
         z-index: 10;
         position: relative;
         display: block;
+        line-height: 0;
     }
-
+    
 body {
     overflow: hidden;
-    width: 100vw;
+    width: 100vw; 
 }
 .sliderloaded .top{
-    top: 17.5px;
+    top: 20.5px;
 }
 .sliderloaded .bottom{
     bottom: 13.5px;
@@ -84,10 +119,21 @@ body {
     display: block;
     height: 100vh;
 }
+// .sliderloaded .logo.bottom:after{
+//     height: 100px;
+// }
 .mobile-togle , .d-inline-block, .float-right{
     display: none!important;
 }
 @media only screen and (max-width: 768px) {
+    .menu.four.opportunite {
+        margin-bottom: 50px;
+    }
+    
+    .d-inline-block{
+    padding: 40px 10px;
+    }
+
     html body .menuk > .menu{
 display: none;
     }
@@ -107,7 +153,7 @@ display: none;
     display: block !important;
     position: absolute;
     z-index: 9999;
-    right: 0px;
+    right: 10px;
     /* font-size: 0px; */
 }
 .overflow-hidne.menuk .menu {
@@ -133,12 +179,20 @@ display: none;
     height: auto; 
     height: 86vh!important;
 }
+// .sliderloaded .bottom {
+//     bottom: 36.5px;
+// }
 .sliderloaded .bottom {
-    bottom: 36.5px;
+    bottom: 54.5px;
 }
-.sliderloaded .top {
-    top: 13.5px;
+.flex-control-nav { 
+    bottom: 42px!important;
 }
+    ::ng-deep {
+    body .top  { 
+        top: 48.3%;
+    }
+    }
 .mobile-togle{
     display: block;
     text-align: right;
@@ -148,6 +202,13 @@ display: none;
 body .bottom[_ngcontent-cvc-c105] { 
     bottom: 43.5%;
 }
+.d-inline-block .menu.four.opportunite a:after{
+    opacity: 0;
+}
+.logo.top:before{
+    left: -8px;
+}
+
 }
 }
 .logo, .menu {
@@ -165,8 +226,9 @@ body .bottom[_ngcontent-cvc-c105] {
 }
 .menu a{
     color: #fff;
-    font-weight: 600;
-    font-size: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
 }
 .d-inline-block {
     top: 36px;
@@ -194,39 +256,57 @@ button.float-right {
     font-size: 0px;
     outline: none;
     border: 0px;
-    background: rgb(255 255 255);
+    background: transparent;
 }
 
 button.float-right::after{
     content: "+";
-    font-size: 20px;
+    font-size: 34px;
+    line-height: 1;
 }
 button.float-right.negative::after{
     content: "-";
-    font-size: 20px;
+    font-size: 34px;
+    line-height: 1;
     
 }
 .menu a:hover{
-color: #39ff14
+    color: #39ff14!important;
 }
 .propos {
     top: 2vh;
-    left: 5.5vw;
+    left: 78px;
     z-index: 10;
+    line-height: 2;
     
 }
 .contact {
-    bottom: 1vh;
-    left: 5.5vw;
+    bottom: 0px;
+    left: 76px;
     z-index: 10;
+    line-height: 2.5;
 }
 .projects {
     top: 2vh;
-    right: 5.5vw;
+    right: 63px;
     z-index: 10;
+    line-height: 2;
 }
-.opportunite {
-    bottom: 1vh;
-    right: 5.5vw;
-    z-index: 10;
+.opportunite { 
+    right: 63px;
+    z-index: 10; 
+    bottom: 0px;  
+    line-height: 2.5;
+}
+
+@media only screen and (max-width: 768px) {
+    .bottom , .top{
+        left: 10px;
+        transform: translateX(0%);
+        transition: all 2s ease 0s;
+    }
+    .logo.bottom:after{
+
+    left: -11px;
+    }
 }

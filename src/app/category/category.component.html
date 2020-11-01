@@ -1,0 +1,38 @@
+<div class="warpperHome">
+    <div class="content">
+<ul class="cat-filter">
+    <li><a href="/category/tous">tous</a></li>
+    <li class="active"><a href="/category/2019">2019</a></li>
+    <li><a href="/category/2020">2020</a></li>
+    <li><a href="/category/HABITATION">HABITATION</a></li>
+    <li><a href="/category/CONCOURS">CONCOURS</a></li>
+</ul>
+
+<div *ngFor="let post of posts">  
+    
+  <div class="gdlr-core-item-list gdlr-core-blog-full  gdlr-core-item-mglr gdlr-core-style-left">
+    <div class="gdlr-core-blog-thumbnail-wrap clearfix">
+         
+    <div class="gdlr-core-blog-full-content-wrap">
+                                                            
+        <div class="gdlr-core-blog-full-head clearfix">
+            <div class="gdlr-core-blog-full-head-right">
+                <a [routerLink]="['/project',post.id]"> 
+                <h3 class="gdlr-core-blog-title gdlr-core-skin-title" id="h3_2207_3">
+                     {{post.title.rendered}}  
+                </h3>
+                <img class="hoverimg" [src]="post.featured_image"/> 
+                </a>
+                 
+            </div>
+             
+            <!-- <div class="gdlr-core-blog-content" [innerHTML]="post.excerpt.rendered"> </div> -->
+             
+        <!-- <a [routerLink]="['/project',post.id]"> readmore </a>     -->
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+</div></div>

@@ -9,7 +9,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import {SharedModule} from './shared/shared.module';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ProjetsComponent } from './projets/projets.component';
+import { ProjectComponent } from './project/project.component';
+import { CategoryComponent } from './category/category.component';
+import { OportuniteComponent } from './oportunite/oportunite.component'; 
 
 @NgModule({
   declarations: [
@@ -17,6 +21,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponentComponent,
     AboutComponent,
     ContactComponent,
+    ProjetsComponent,
+    ProjectComponent,
+    CategoryComponent,
+    OportuniteComponent,
   ],
   imports: [
     BrowserModule,

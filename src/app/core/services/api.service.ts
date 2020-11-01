@@ -26,4 +26,9 @@ export class ApiService {
     //return this.http.get(`${this.baseUrl3}/pages/${pageid}`);
     return this.http.get(`${this.baseUrl3}/pages/1173`);
    }
+
+   public getProject(id) {
+    return this.http.get(`${this.baseUrl3}/posts/${id}`);
+}
+
 }

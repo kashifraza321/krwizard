@@ -1,0 +1,102 @@
+<div className="content_main d-flex justify-content-center align-items-center blackBg">
+    
+    <canvas></canvas>
+<!-- <canvas class="d-none d-sm-block" width="1340" height="652" style="width: 1340px; height: 652px;"></canvas> -->
+<div *ngIf="gameover" style="background-color: black; color: white; height: 150px; width: 300px; text-align: center; position: absolute;
+ 
+    top: calc( 50% - 75px);
+    left: calc( 50% - 150px);
+"><p style="font-size: 35px;">Vous avez perdu!&nbsp;:(</p><button style="width: 220px; height: 60px; font-weight: bold; border-radius: 35px; border: 1px groove white; background-color: black; color: white; font-size: 35px;">RESSAYER</button></div>
+ 
+
+<div *ngIf="gamestart" >
+
+    <div style="
+            background-color: black;
+            color: white;
+            height: 300px;
+            width: 700px;
+            text-align: center;
+            position: absolute;
+            z-index: 9;
+    top: calc( 50% - 150px);
+    left: calc( 50% - 450px);"
+           
+          class ="d-none d-sm-block"
+        >
+          <div
+            style= "
+              text-align: center;
+              align-items: center;
+              margin-top: 40px;
+            "
+          >
+            <p style="font-size: 35px; color: white;">
+              Gagnez le droit de postuler! 3 points minimum!
+            </p>
+            <button
+              style= "
+                width: 220px;
+                height: 60px;
+                font-weight: bold;
+                font-size: 35px;
+                border-radius: 35px;
+                border: 1px groove white;
+                background-color: black;
+                color: white;
+                padding-bottom: 10px;" >
+              DÉMARRER
+            </button>
+            <p style= "font-size: 35px; color: white;">
+              Utilisez les flèches haut et bas du clavier </p>
+            
+          </div>
+        </div>
+ 
+</div>
+
+<div *ngIf="gamewinner"> 
+   
+        <div  style="
+            background-color: black;
+            color: white;
+            height: 250px;
+            width: 600px;
+            text-align: center;
+            position: absolute;"
+        >
+          <div style="
+              text-align: center;
+              align-items: center;
+              margin-top: 40px;"
+          >
+            <p style="font-size:46px; color:white; text-align: left ">
+              BRAVO!&nbsp;:)
+            </p>
+            <p style="font-size:24px; color: white; text-align: left;">
+              Nous cherchons un(e) stagiaire doué(e) en pong & en architecture
+              pour une durée de 6 à 12 mois. Immédiatement ou à convenir,
+              <p
+                style="text-align:left; font-size: 24px "
+                class="mb-0"
+              >
+                adresse de contact:
+                <a
+                  href="mailto:info@idos.ch"
+                  style=" color: white;
+                    text-decoration: underline;
+                    padding-left: 5px;
+                    font-size: 24px; "
+                >
+                  archi@idos.ch
+                </a>
+              </p>
+            
+          </div>
+        </div>
+       
+   
+</div> 
+
+
+</div>
